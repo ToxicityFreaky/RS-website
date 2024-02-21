@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="services.css" />
+    <title>RS Elektro</title>
+  </head>
+  <body>
+    <header class="navbar">
+      <nav>
+        <img src="./images/rs-logo.png" />
+        <ul>
+          <li><a href="#image1">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#form-scroll">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="main_head" id="form-scroll">
+        <div class="main_container">
+          <div class="contact-content">
+            <h2>RS Elektro</h2>
+            <p class="contact-description">
+              We pride ourselves on offering affordable rates and ensuring 24/7
+              availability.<br />
+              Our certified team guarantees a rapid response for effective
+              resolution of electrical issues.
+            </p>
+            <div class="call-to-action">
+              <div class="black-box">
+                <a href="tel:+31 6 38 02 48 61">
+                  <div class="yellow-box" id="box1">
+                    <img
+                      class="image-icon"
+                      src="./images/phone-call.png"
+                      alt="Phone Call"
+                    />
+                    <h3>CALL</h3>
+                  </div>
+                </a>
+                <a href="#form-scroll">
+                  <div class="yellow-box" id="box2">
+                    <img
+                      class="image-icon"
+                      src="./images/telephone.png"
+                      alt="Call Me Back"
+                    />
+                    <h3>CALL ME BACK</h3>
+                  </div>
+                </a>
+                <a href="#form-scroll">
+                  <div class="yellow-box" id="box3">
+                    <img
+                      class="image-icon"
+                      src="./images/calendar.png"
+                      alt="Make an Appointment"
+                    />
+                    <h3>APPOINTMENT</h3>
+                  </div>
+                </a>
+                <a href="#form-scroll">
+                  <div class="yellow-box" id="box4">
+                    <img
+                      class="image-icon"
+                      src="./images/contact-form.png"
+                      alt="Contact Form"
+                    />
+                    <h3>CONTACT FORM</h3>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section">
+        <div class="container">
+          <div class="about-content">
+            <h2>Over ons</h2>
+            <p>
+              Welkom in onze wereld van innovatie en creativiteit. Bij [Uw
+              bedrijfsnaam] geloven wij in [Uw missie of visie]. Onze reis begon
+              in [Jaar] en sindsdien hebben we ons toegelegd op [Korte
+              beschrijving van uw bedrijf].
+            </p>
+            <p>
+              Ontmoet de gepassioneerde individuen waaruit ons team bestaat en
+              die ons elke dag naar uitmuntendheid drijven.
+            </p>
+            <a href="#service-scroll" class="btn">Onze services</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="services-section" id="service-scroll">
+        <div class="container-services">
+          <h2>Our Services</h2>
+          <div class="service-items">
+            <div class="service-item">
+              <img src="./images/showcase1.jpg" alt="Service 1" />
+              <div class="service-info">
+                <h3>samenwerking</h3>
+                <p>
+                  RS Electro versterken we de elektro-industrie door middel van
+                  sterke partnerschappen. Onze expertise en flexibele aanpak
+                  maken samenwerking eenvoudig en effectief. Neem contact op
+                  voor innovatieve oplossingen en gezamenlijk succes.
+                </p>
+              </div>
+            </div>
+            <div class="service-item">
+              <img src="./images/showcase2.jpg" alt="Service 2" />
+              <div class="service-info">
+                <h3>Elektriciteitsbekabeling installeren</h3>
+                <p>
+                  RS Electro bieden we efficiënte service in
+                  elektriciteitskabels trekken. Snel, betrouwbaar en precies wat
+                  je nodig hebt voor soepele installaties. Neem contact op voor
+                  naadloze elektrische oplossingen.
+                </p>
+              </div>
+            </div>
+            <div class="service-item">
+              <img src="./images/showcase3.jpg" alt="Service 3" />
+              <div class="service-info">
+                <h3>Groepenkasten installeren</h3>
+                <p>
+                  RS Electro verzorgen we vakkundige installaties van
+                  groepenkasten. Betrouwbaar en veilig, zodat jouw elektrische
+                  systemen optimaal functioneren. Neem contact op voor een
+                  soepele groepenkastinstallatie.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="form-scroll">
+        <form action="submit_form.php" method="post">
+          <h2>Neem contact op</h2>
+          <label for="name">naam:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="phone">Tel:</label>
+          <input type="tel" id="phone" name="phone" required />
+
+          <label for="message">Bericht:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <label for="category">Category:</label>
+          <select id="category" name="category">
+            <option value="contact">Contact</option>
+            <option value="quote">Offerte</option>
+            <option value="diagnose">Diagnose</option>
+            <option value="other">Overig</option>
+          </select>
+
+          <button type="submit">Verzenden</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section contact">
+          <h2>Contact Us</h2>
+          <p>Email: info@example.com</p>
+          <p>Phone: (123) 456-7890</p>
+        </div>
+        <div class="footer-section links">
+          <h2>Quick Links</h2>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section social">
+          <h2>Follow Us</h2>
+          <!-- social media -->
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Your Website. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
